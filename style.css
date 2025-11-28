@@ -251,29 +251,82 @@ body { padding-top: 80px; }
 }
 
 /* ===================================================================
-   Projects (Before/After + Gallery)
+   Projects Slider
    =================================================================== */
-.before-after{
-  display:grid; gap:1rem; grid-template-columns: 1fr 1fr; margin-bottom: 1.25rem;
+.projects{
+  background: linear-gradient(180deg, #fff 0%, #fffdf7 100%);
 }
-.before-after figure{
-  margin:0; border:1px solid var(--line); border-radius: var(--radius); overflow:hidden;
-  background:#fff; box-shadow: var(--shadow-1);
+.project-carousel{
+  position: relative;
 }
-.before-after figcaption{
-  font-weight:700; text-align:center; padding:.5rem; background:#fff; border-top:1px solid var(--line);
+.project-carousel__viewport{
+  display:flex; gap: 1rem; overflow:hidden;
+  scroll-snap-type: x mandatory; scrollbar-width: none;
+  padding: .4rem 0 1rem;
+}
+.project-carousel__viewport::-webkit-scrollbar{ display:none; }
+.project-slide{
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  background:#fff; border:1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-2); overflow:hidden; position:relative;
+  transition: transform .12s ease, box-shadow .2s ease;
+}
+.project-slide:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0,0,0,.12);
+}
+.project-slide img{
+  width: 100%; height: clamp(240px, 46vw, 420px);
+  object-fit: cover; display:block;
+  aspect-ratio: 16 / 9;
+}
+.project-slide__tag{
+  position:absolute; top: 12px; left: 12px;
+  background: color-mix(in srgb, var(--brand) 90%, white);
+  color: #3b2f00; font-weight: 800; font-size: .8rem;
+  padding: .35rem .7rem; border-radius: 999px; box-shadow: var(--shadow-1);
+}
+.project-slide__tag--after{
+  background: #0ea5e9; color:#fff;
+}
+.project-slide__caption{
+  display:flex; align-items:center; gap:.65rem; flex-wrap:wrap;
+  padding: .8rem 1rem 1rem; background:#fff;
+}
+.project-slide__caption p{
+  margin:0; color: var(--muted); font-weight:600;
 }
 
-.grid--gallery{
-  grid-template-columns: repeat(12, 1fr);
-  gap: .75rem;
+.project-carousel__nav{
+  position:absolute; top:50%; transform: translateY(-50%);
+  width:42px; height:42px; border-radius:999px; border:none; cursor:pointer;
+  background: rgba(17,17,18,.85); color:#fff; display:grid; place-items:center;
+  box-shadow: var(--shadow-2); font-size: 1.4rem;
 }
-.grid--gallery img{
-  grid-column: span 12; height: 200px; object-fit: cover;
-  border-radius: 12px; border:1px solid var(--line); background:#fff; box-shadow: var(--shadow-1);
+.project-carousel__nav.prev{ left: .5rem; } .project-carousel__nav.next{ right: .5rem; }
+.project-carousel__nav:focus-visible{ outline: 3px solid var(--brand); outline-offset: 2px; }
+
+.project-carousel__dots{
+  display:flex; justify-content:center; gap:.45rem; margin-top: .1rem;
 }
-@media (min-width: 560px){ .grid--gallery img{ grid-column: span 6; } }
-@media (min-width: 960px){ .grid--gallery img{ grid-column: span 4; } }
+.project-carousel__dots button{
+  width: 9px; height: 9px; border-radius: 999px; border:none; background:#d1d5db; cursor:pointer;
+}
+.project-carousel__dots button[aria-selected="true"]{
+  background: var(--brand); width: 20px; border-radius: 7px;
+}
+
+@media (min-width: 720px){
+  .project-slide{ flex-basis: 74%; }
+}
+@media (min-width: 1080px){
+  .project-slide{ flex-basis: 55%; }
+}
+
+.services__intro{
+  margin-top: 0;
+}
 
 /* ===================================================================
    Reviews Carousel

@@ -22,6 +22,14 @@
   <meta property="og:title" content="LugoEnergy — Electrician in Sacramento" />
   <meta property="og:description" content="Panel upgrades, EV chargers, lighting, troubleshooting, and rewiring. Call 916-514-2072." />
   <meta property="og:image" content="https://lugoenergy.net/android-chrome-512x512.png" />
+  <meta property="og:image:alt" content="LugoEnergy logo" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LugoEnergy — Electrician in Sacramento" />
+  <meta name="twitter:description" content="Panel upgrades, EV charger installs, lighting, troubleshooting, and rewiring. Call 916-514-2072." />
+  <meta name="twitter:image" content="https://lugoenergy.net/android-chrome-512x512.png" />
+  <meta name="twitter:image:alt" content="LugoEnergy logo" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,12 +46,29 @@
     "@type":"Electrician",
     "name":"LugoEnergy",
     "image":"assets/logo.PNG",
-    "areaServed":"Sacramento, CA",
-    "email":"info@lugoenergy.net",
+    "areaServed":"Sacramento & nearby cities",
+    "email":"support@lugoenergy.com",
     "telephone":"+1-916-514-2072",
     "url":"https://lugoenergy.net/",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Sacramento",
+      "addressRegion":"CA",
+      "addressCountry":"US"
+    },
+    "serviceArea":[
+      { "@type":"Place", "name":"Sacramento, CA" },
+      { "@type":"Place", "name":"Roseville, CA" },
+      { "@type":"Place", "name":"Rocklin, CA" },
+      { "@type":"Place", "name":"Folsom, CA" },
+      { "@type":"Place", "name":"Elk Grove, CA" }
+    ],
+    "geo": { "@type":"GeoCoordinates", "latitude":38.5816, "longitude":-121.4944 },
     "priceRange":"$$",
-    "sameAs":[]
+    "hasMap":"https://www.google.com/maps/place/Sacramento,+CA",
+    "sameAs":[
+      "https://www.thumbtack.com/ca/antelope/electrical-repairs/lugo-energy-inc-electrical-service/service/487435651042140186"
+    ]
   }
   </script>
 </head>
@@ -69,6 +94,7 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#reviews">Reviews</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="service-areas.html">Service Areas</a></li>
           <li class="nav__cta"><a href="#contact" class="btn btn--primary">Request a Quote</a></li>
         </ul>
       </nav>
@@ -80,14 +106,15 @@
     <div class="container hero__inner">
       <div class="hero__content">
         <h1>Reliable Electrical Services in Sacramento</h1>
-        <p>Panel upgrades, EV charger installs, lighting, troubleshooting, and whole-house rewiring for residential & light commercial clients.</p>
+        <p>LugoEnergy provides licensed residential electrical services across Sacramento and nearby cities. We specialize in panel upgrades, EV charger installations, lighting, troubleshooting, and code-compliant repairs.</p>
+        <p>Expect fast scheduling, clean work, and clear communication from a local electrician you can trust. From historic Midtown homes to newer builds in Elk Grove and Folsom, we solve electrical issues with precise diagnostics and tidy finishes—often with same-day help for troubleshooting and breaker problems.</p>
         <div class="hero__cta">
           <a href="#contact" class="btn btn--primary">Get a Free Quote</a>
           <a href="tel:19165142072" class="btn btn--ghost">Call 916-514-2072</a>
         </div>
       </div>
       <figure class="hero__media">
-        <img src="assets/ura.png" alt="Professional lighting installation" loading="eager" />
+        <img src="assets/ura.png" alt="Professional lighting installation" loading="eager" fetchpriority="high" decoding="async" />
       </figure>
     </div>
   </section>
@@ -99,10 +126,10 @@
         <h2 id="about-title" class="section__title">About LugoEnergy</h2>
 
         <p class="section__lead">
-          LugoEnergy is a <strong>California Licensed C-10 Electrical Contractor</strong> serving Sacramento and surrounding areas.
-          With over <strong>2 years in business</strong> and <strong>55 verified 5-star reviews on Thumbtack</strong>, we provide
-          trusted residential and light commercial electrical services focused on safety, precision, and customer satisfaction.
+          LugoEnergy is a Sacramento-based residential electrician focused on clean, safe, and code-compliant work. We help homeowners with everything from <a href="panel-upgrades.html">panel upgrades</a> and <a href="ev-charger-installation.html">EV charger installations</a> to lighting, outlet repairs, and troubleshooting stubborn electrical issues.
         </p>
+        <p>Because we work in Sacramento homes every week, we understand the quirks of older panels, mixed wiring, and remodels. We label panels clearly, keep work areas clean, and explain options before we start. Common projects include upgrading capacity for EV charging, adding dedicated circuits for remodels, and fixing recurring breaker trips.</p>
+        <p>We primarily serve Sacramento, Elk Grove, Rocklin, Folsom, Roseville, and surrounding neighborhoods, with flexible scheduling and honest communication on every job. As a licensed and insured C-10 contractor, we prioritize safety, neat workmanship, and transparent pricing.</p>
 
         <ul class="pill-list">
           <li>✔ Licensed & Insured (C-10 License)</li>
@@ -112,48 +139,58 @@
       </div>
     </section>
 
+    <!-- ======= Service Areas teaser ======= -->
+    <section class="section" aria-labelledby="areas-teaser">
+      <div class="container">
+        <h2 id="areas-teaser" class="section__title">Cities We Serve</h2>
+        <p class="section__lead">We provide residential electrical service across Sacramento County and nearby communities, including Sacramento, Elk Grove, Rocklin, Folsom, Roseville, Carmichael, and Citrus Heights.</p>
+        <p><a href="service-areas.html">View all service areas →</a></p>
+      </div>
+    </section>
+
     <!-- ======= Services ======= -->
     <section class="section services" id="services" aria-labelledby="services-title">
       <div class="container">
         <h2 id="services-title" class="section__title">Services</h2>
+        <p class="section__lead services__intro">We focus on upgrades and repairs that make Sacramento homes safer and more convenient. Below are common projects we complete for local homeowners. Need help right away? <a href="#contact">Request a quote</a> or call <a href="tel:19165142072">916-514-2072</a>.</p>
         <div class="grid grid--cards">
           <article class="card">
             <img src="assets/panel1.jpg" alt="Electrical panel upgrade" loading="lazy" />
             <div class="card__body">
-              <h3>Panel Upgrades & Breakers</h3>
-              <p>Upgrade capacity, replace outdated breakers, and improve safety for remodels, additions, or solar/EV readiness.</p>
+              <h3><a href="panel-upgrades.html">Panel Upgrades & Breakers</a></h3>
+              <p>Increase capacity, replace outdated breakers, and prep for remodels or solar/EV readiness with clearly labeled panels.</p>
             </div>
           </article>
 
           <article class="card">
             <img src="assets/evcharger.png" alt="EV charger installation" loading="lazy" />
             <div class="card__body">
-              <h3>EV Charger Installations</h3>
-              <p>Level-2 charger installs with proper circuits, code compliance, and neat conduit runs.</p>
+              <h3><a href="ev-charger-installation.html">EV Charger Installations</a></h3>
+              <p>Level-2 charger circuits sized to your load, with neat conduit runs, tidy finishes, and verified charging speeds.</p>
             </div>
           </article>
 
           <article class="card">
             <img src="assets/lamp5.jpg" alt="Indoor lighting installation" loading="lazy" />
             <div class="card__body">
-              <h3>Lighting & Fixtures</h3>
-              <p>Recessed lighting, exterior lights, chandeliers, and smart switches—installed cleanly and safely.</p>
+              <h3><a href="lighting-installation.html">Lighting & Fixtures</a></h3>
+              <p>Recessed lights, chandeliers, exterior fixtures, and smart switches installed with balanced layouts and clean wiring.</p>
             </div>
           </article>
 
           <article class="card">
             <img src="assets/fan1.jpg" alt="Ceiling fan installation" loading="lazy" />
             <div class="card__body">
-              <h3>Ceiling Fans</h3>
-              <p>Balanced ceiling fan installations with reinforced boxes and tidy wiring.</p>
+              <h3><a href="ceiling-fan-installation.html">Ceiling Fans</a></h3>
+              <p>Balanced fan installs with fan-rated boxes, secure mounting, and smooth operation for bedrooms, patios, and living rooms.</p>
             </div>
           </article>
 
           <article class="card">
             <img src="assets/troubleshooting2.jpg" alt="Electrical troubleshooting and repairs" loading="lazy" />
             <div class="card__body">
-              <h3>Troubleshooting & Repairs</h3>
-              <p>Diagnostics for tripping breakers, dead outlets, and intermittent issues—fixed at the source.</p>
+              <h3><a href="electrical-troubleshooting.html">Troubleshooting & Repairs</a></h3>
+              <p>Diagnostics for tripping breakers, dead outlets, and intermittent issues—fixed at the source with clear explanations.</p>
             </div>
           </article>
 
@@ -172,26 +209,79 @@
     <section class="section projects" id="projects" aria-labelledby="projects-title">
       <div class="container">
         <h2 id="projects-title" class="section__title">Recent Projects</h2>
+        <p class="section__lead">Here are a few recent projects we’ve completed in Sacramento and nearby cities, including panel upgrades, EV charger circuits, and lighting upgrades. Tap a photo to inspect the workmanship.</p>
 
-        <div class="before-after">
-          <figure>
-            <img src="assets/before1.jpg" alt="Before: old panel and wiring" loading="lazy" />
-            <figcaption>Before</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/after1.jpg" alt="After: upgraded panel and tidy wiring" loading="lazy" />
-            <figcaption>After</figcaption>
-          </figure>
+        <div class="project-carousel" role="region" aria-roledescription="carousel" aria-label="Recent project photos">
+          <button class="project-carousel__nav prev" aria-label="Previous project">‹</button>
+          <div class="project-carousel__viewport" id="projectsTrack" tabindex="0">
+            <article class="project-slide">
+              <img src="assets/before1.jpg" alt="Before: living room wiring and lighting prep" loading="lazy" decoding="async" />
+              <div class="project-slide__caption">
+                <span class="project-slide__tag">Before</span>
+                <p>Living room refresh and wiring cleanup.</p>
+              </div>
+            </article>
+
+            <article class="project-slide">
+              <img src="assets/after1.jpg" alt="After: living room with upgraded lighting and ceiling fan" loading="lazy" decoding="async" />
+              <div class="project-slide__caption">
+                <span class="project-slide__tag project-slide__tag--after">After</span>
+                <p>Finished space with new lighting, fan, and trim.</p>
+              </div>
+            </article>
+
+            <article class="project-slide">
+              <img src="assets/evcharging.jpg" alt="Tesla wall connector installed in garage" loading="lazy" decoding="async" />
+              <div class="project-slide__caption">
+                <span class="project-slide__tag">EV Charger</span>
+                <p>Clean Tesla Wall Connector install with tidy conduit.</p>
+              </div>
+            </article>
+
+            <article class="project-slide">
+              <img src="assets/panel1.jpg" alt="Upgraded electrical panel with labeled breakers" loading="lazy" decoding="async" />
+              <div class="project-slide__caption">
+                <span class="project-slide__tag">Panel Upgrade</span>
+                <p>Service upgrade with neat labeling and clear access.</p>
+              </div>
+            </article>
+
+            <article class="project-slide">
+              <img src="assets/lamp4.jpg" alt="Chandelier installed over a staircase" loading="lazy" decoding="async" />
+              <div class="project-slide__caption">
+                <span class="project-slide__tag">Lighting</span>
+                <p>Statement chandelier installed safely over the stairs.</p>
+              </div>
+            </article>
+
+            <article class="project-slide">
+              <img src="assets/faninstall1.jpg" alt="Ceiling fan installed in a living area" loading="lazy" decoding="async" />
+              <div class="project-slide__caption">
+                <span class="project-slide__tag">Ceiling Fan</span>
+                <p>Balanced fan install with reinforced mounting box.</p>
+              </div>
+            </article>
+
+            <article class="project-slide">
+              <img src="assets/rewiring.jpg" alt="Whole-house rewiring in progress with exposed framing" loading="lazy" decoding="async" />
+              <div class="project-slide__caption">
+                <span class="project-slide__tag">Rewiring</span>
+                <p>Whole-home wiring routed cleanly during remodel.</p>
+              </div>
+            </article>
+
+            <article class="project-slide">
+              <img src="assets/lights2.jpg" alt="Finished recessed lighting in a hallway" loading="lazy" decoding="async" />
+              <div class="project-slide__caption">
+                <span class="project-slide__tag">Finishes</span>
+                <p>Smooth recessed lighting finish for a bright hallway.</p>
+              </div>
+            </article>
+          </div>
+          <button class="project-carousel__nav next" aria-label="Next project">›</button>
         </div>
 
-        <div class="grid grid--gallery">
-          <img src="assets/evcharger.png" alt="EV charger install" loading="lazy" />
-          <img src="assets/panel1.jpg" alt="Panel upgrade" loading="lazy" />
-          <img src="assets/lamp1.jpg" alt="Fixture install" loading="lazy" />
-          <img src="assets/lamp3.jpg" alt="Lighting upgrade" loading="lazy" />
-          <img src="assets/lamp4.jpg" alt="Chandelier install" loading="lazy" />
-          <img src="assets/faninstall1.jpg" alt="Ceiling fan install" loading="lazy" />
-        </div>
+        <div class="project-carousel__dots" id="projectsDots" role="tablist" aria-label="Choose project photo"></div>
       </div>
     </section>
 
@@ -199,6 +289,7 @@
     <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
       <div class="container">
         <h2 id="reviews-title" class="section__title">Customer Reviews</h2>
+        <p class="section__lead">Homeowners across Sacramento trust LugoEnergy for clean work and reliable service:</p>
 
         <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Testimonials">
           <button class="carousel__nav prev" aria-label="Previous review">‹</button>
@@ -274,6 +365,7 @@
         <div>
           <h2 id="contact-title" class="section__title">Request a Quote</h2>
           <p class="section__lead">Tell us about your project. We’ll get back within one business day.</p>
+          <p>Share a few details and we’ll follow up with a clear, no-pressure quote. We typically respond the same day for Sacramento-area homeowners.</p>
 
           <form id="quoteForm" class="form" action="https://formspree.io/f/mrbbgvrz" method="POST" novalidate>
   <div class="form__row">
@@ -327,7 +419,7 @@
           <div class="contact-card">
             <h3>Contact</h3>
             <p><strong>Phone:</strong> <a href="tel:19165142072">916-514-2072</a></p>
-            <p><strong>Email:</strong> <a href="mailto:info@lugoenergy.net">info@lugoenergy.net</a></p>
+            <p><strong>Email:</strong> <a href="mailto:support@lugoenergy.com">support@lugoenergy.com</a></p>
             <p><strong>Service Area:</strong> Sacramento & nearby</p>
           </div>
 
@@ -342,14 +434,61 @@
         </aside>
       </div>
     </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title" class="section__title">Frequently Asked Questions</h2>
+        <div class="grid" style="gap:.8rem">
+          <article class="card">
+            <div class="card__body">
+              <h3>Do you offer same-day service?</h3>
+              <p>Yes. We provide same-day service in most Sacramento neighborhoods for troubleshooting, breaker issues, EV charger circuits, and urgent electrical repairs.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__body">
+              <h3>Are you licensed and insured?</h3>
+              <p>Yes. LugoEnergy is a fully licensed and insured California residential electrician. All work is completed to code with clean, safe installation practices.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__body">
+              <h3>Do you install EV chargers?</h3>
+              <p>Yes. We install Level 2 chargers for Tesla, ChargePoint, Wallbox, JuiceBox, and all major brands. We handle permits, circuits, conduit, and testing.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__body">
+              <h3>Do you work in older Sacramento homes?</h3>
+              <p>Yes. We frequently service homes built between the 1950s and early 2000s, including aluminum wiring, outdated panels, mixed wiring, and remodel upgrades.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__body">
+              <h3>What areas do you serve?</h3>
+              <p>We serve Sacramento, Elk Grove, Rocklin, Folsom, Roseville, Carmichael, Citrus Heights, Natomas, and surrounding communities.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ======= Footer ======= -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> LugoEnergy. All rights reserved.</p>
-      <!-- Clean links (no #home) -->
-      <p><a href="./">Back to top</a> · <a href="privacy/">Privacy Policy</a></p>
+      <div>
+        <p><strong>LugoEnergy</strong></p>
+        <p>Licensed Residential Electrician – Sacramento, CA</p>
+        <p>Phone: <a href="tel:19165142072">916-514-2072</a></p>
+        <p>Email: <a href="mailto:support@lugoenergy.com">support@lugoenergy.com</a></p>
+        <p>Hours: Mon–Sat, 8:00 AM – 6:00 PM</p>
+      </div>
+      <div style="text-align:right">
+        <p>© <span id="year"></span> LugoEnergy. All rights reserved.</p>
+        <!-- Clean links (no #home) -->
+        <p><a href="./">Back to top</a> · <a href="privacy/">Privacy Policy</a></p>
+      </div>
     </div>
   </footer>
 
@@ -395,6 +534,56 @@
         }
         lastScroll = current;
       });
+    })();
+
+    // Projects carousel
+    (function () {
+      const track = document.getElementById('projectsTrack');
+      if (!track) return;
+      const slides = Array.from(track.querySelectorAll('.project-slide'));
+      if (!slides.length) return;
+
+      const dotsWrap = document.getElementById('projectsDots');
+      const prev = document.querySelector('.project-carousel__nav.prev');
+      const next = document.querySelector('.project-carousel__nav.next');
+
+      if (dotsWrap) {
+        slides.forEach((_, i) => {
+          const b = document.createElement('button');
+          b.type = 'button';
+          b.setAttribute('role', 'tab');
+          b.setAttribute('aria-controls', 'project-' + i);
+          if (i === 0) b.setAttribute('aria-selected', 'true');
+          dotsWrap.appendChild(b);
+        });
+      }
+
+      const dots = dotsWrap ? Array.from(dotsWrap.querySelectorAll('button')) : [];
+      slides.forEach((s, i) => { s.id = 'project-' + i; });
+
+      let index = 0;
+      const go = (i, behavior = 'smooth') => {
+        index = (i + slides.length) % slides.length;
+        const x = slides[index].offsetLeft;
+        track.scrollTo({ left: x, behavior });
+        dots.forEach((d, di) => d.setAttribute('aria-selected', di === index ? 'true' : 'false'));
+      };
+
+      prev?.addEventListener('click', () => go(index - 1));
+      next?.addEventListener('click', () => go(index + 1));
+      dots.forEach((d, di) => d.addEventListener('click', () => go(di)));
+
+      let timer = setInterval(() => go(index + 1), 4500);
+      const pause = () => { clearInterval(timer); timer = null; };
+      const play = () => { if (!timer) timer = setInterval(() => go(index + 1), 4500); };
+
+      track.addEventListener('mouseenter', pause);
+      track.addEventListener('mouseleave', play);
+      track.addEventListener('focusin', pause);
+      track.addEventListener('focusout', play);
+
+      new ResizeObserver(() => go(index, 'auto')).observe(track);
+      go(0, 'auto');
     })();
 
     // Reviews carousel
