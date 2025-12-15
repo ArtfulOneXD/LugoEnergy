@@ -22,16 +22,19 @@
   <meta property="og:title" content="Licensed Electrician in Sacramento | LugoEnergy" />
   <meta property="og:description" content="Residential electrician in Sacramento for panel upgrades, EV chargers, lighting, fans, and troubleshooting. Clean work, clear pricing. Call 916-514-2072." />
   <meta property="og:url" content="https://lugoenergy.net/" />
-  <meta property="og:image" content="https://lugoenergy.net/assets/ura.png" />
+  <meta property="og:image" content="https://lugoenergy.net/assets/ura.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Licensed Electrician in Sacramento | LugoEnergy" />
   <meta name="twitter:description" content="Residential electrician in Sacramento for panel upgrades, EV chargers, lighting, fans, and troubleshooting. Clean work, clear pricing. Call 916-514-2072." />
-  <meta name="twitter:image" content="https://lugoenergy.net/assets/ura.png" />
+  <meta name="twitter:image" content="https://lugoenergy.net/assets/ura.jpg" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="assets/ura.webp" imagesrcset="assets/ura.webp 1x, assets/ura.jpg 2x" imagesizes="(max-width: 1200px) 100vw, 1200px">
 
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
@@ -42,7 +45,7 @@
     "@context": "https://schema.org",
     "@type": "Electrician",
     "name": "LugoEnergy",
-    "image": "https://lugoenergy.net/assets/ura.png",
+    "image": "https://lugoenergy.net/assets/ura.jpg",
     "url": "https://lugoenergy.net/",
     "telephone": "+1-916-514-2072",
     "address": {
@@ -72,7 +75,46 @@
         "closes": "18:00"
       }
     ],
-    "sameAs": []
+    "sameAs": [
+      "https://www.thumbtack.com/ca/antelope/electrical-repairs/lugo-energy-inc-electrical-service/service/487435651042140186"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "LugoEnergy",
+    "image": "https://lugoenergy.net/assets/ura.jpg",
+    "telephone": "+1-916-514-2072",
+    "url": "https://lugoenergy.net/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sacramento",
+      "addressRegion": "CA",
+      "postalCode": "95814",
+      "addressCountry": "US"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": "Yolanda V.",
+        "reviewBody": "Diagnosed the issue, explained options, and finished same day. Lights look great—fast and professional.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+      },
+      {
+        "@type": "Review",
+        "author": "Krista H.",
+        "reviewBody": "Arrived early, worked efficiently, and even fixed a wrong part I bought—excellent value!",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+      },
+      {
+        "@type": "Review",
+        "author": "Munish C.",
+        "reviewBody": "Installed ceiling fans and an EV charger perfectly. Professional, knowledgeable, and punctual.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+      }
+    ]
   }
   </script>
 </head>
@@ -118,7 +160,10 @@
         </div>
       </div>
       <figure class="hero__media">
-        <img src="assets/ura.png" alt="Professional lighting installation" loading="eager" fetchpriority="high" decoding="async" width="1200" height="900" />
+        <picture>
+          <source srcset="assets/ura.webp" type="image/webp" />
+          <img src="assets/ura.jpg" alt="Professional lighting installation" loading="eager" fetchpriority="high" decoding="async" width="1200" height="900" />
+        </picture>
       </figure>
     </div>
   </section>
